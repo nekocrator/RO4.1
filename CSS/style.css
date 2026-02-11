@@ -1,0 +1,132 @@
+/* ===== Базовые стили ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-image: url("https://cdnb.artstation.com/p/assets/images/images/008/911/025/large/trevor-easley-girls-last-tour3.jpg?1516050289");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    position: relative;
+    color: #f0f0f0;
+}
+
+
+/* ===== Header ===== */
+
+.site-header {
+    width: 100%;
+    background-color: #2a2a2a;
+    padding: 20px 0;
+    border-bottom: 1px solid #444;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+    border-radius: 6px;
+}
+
+.site-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #d0d0d0;
+    letter-spacing: 1px;
+}
+
+/* ===== Main ===== */
+
+.main-content {
+    padding: 60px 20px;
+}
+
+.characters {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* ===== Карточки ===== */
+
+.character-card {
+    width: 260px;
+    background-color: #111;
+    border: 1px solid #333;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.character-card img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+}
+
+.character-card h2 {
+    padding: 15px 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #e0e0e0;
+}
+
+.character-card:hover {
+    transform: translateY(-6px);
+    border-color: #666;
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.character-info {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    padding: 0 15px;
+    font-size: 14px;
+    color: #bfbfbf;
+}
+
+.character-card.active .character-info {
+    max-height: 200px;
+    padding: 10px 15px 20px;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
