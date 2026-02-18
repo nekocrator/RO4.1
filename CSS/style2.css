@@ -1,17 +1,35 @@
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(247, 230, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 main {
-    background-color: rgb(255, 255, 255);
-    border: solid;
-    border-radius: 10px;
-    margin-top: 100px;
-    margin-right: 200px;
-    margin-left: 200px;
-    padding: 20px;
+    background-color: rgb(252, 247, 255);
+    border: 1px solid rgba(186, 148, 196, 0.18);
+    border-radius: 20px;
+    margin: 100px 200px 0px 200px;
+    padding: 22px 24px;
 }
 
-header {
-    background-color: rgb(255, 255, 255);
+.headerInfo {
+
+}
+
+.avatar {
+    border: 3px;
+    width: 148px;
+    height: 148px;
+    border-radius: 999px;
+}
+
+.panel {
+  margin-top: 14px;
+  background: rgb(252, 247, 255);
+  border: 2px solid rgba(236, 161, 255, 0.253);
+  border-radius: 20px;
+  padding: 22px 24px;
+  box-shadow: 1;
+}
+
+.contacty {
 }
